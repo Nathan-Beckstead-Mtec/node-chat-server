@@ -174,7 +174,7 @@ function broadcast(str, notuuid = null){
 
 
 function log(str){
-	const data = str.slice(0,-1);
+	const data = str.slice(0,-1);  //ew code stink to cut the ">"
 
 	fs.appendFile("./log.txt",data, (err) => {
 		if (err) {
